@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>UC6_MultipleAdressBookRefractor</RootNamespace>
+    <RootNamespace>UC9_PrintPersonsCity</RootNamespace>
   </PropertyGroup>
 
 </Project>
