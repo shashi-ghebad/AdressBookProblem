@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace AddressBook
+namespace UC9_PrintPersonsCity
 {
     class AddContacts
     {
