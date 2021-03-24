@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>UC9_PrintPersonsCity</RootNamespace>
+    <RootNamespace>UC10_PersonCountInCity</RootNamespace>
   </PropertyGroup>
 
 </Project>
