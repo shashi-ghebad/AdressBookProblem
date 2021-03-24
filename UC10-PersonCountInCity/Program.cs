@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace UC9_PrintPersonsCity
+
+namespace UC10_PersonCountInCity
 {
     class Program
     {
+
         public static string first_Name;
         public static string last_Name;
         public static string address;
@@ -16,8 +19,7 @@ namespace UC9_PrintPersonsCity
         public static string edit_Last_Name;
         public static string delete_First_Name;
         public static string delete_Last_Name;
-        public static string city_Check;
-        public static string state_Check;
+       
 
         static void Main(string[] args)
         {
@@ -87,20 +89,9 @@ namespace UC9_PrintPersonsCity
 
             Console.WriteLine("\n------PRINT THE NUMBER OF PERSONS BY CITY OR STATE------\n");
 
-            Console.WriteLine("\nDo you want any person Information for City or State then reply with 'c' for City, 's' for State or ANYKEY for No Info: ");
-            string c_s = Console.ReadLine();
-            if (c_s == "c")
-            {
-                Console.WriteLine("Enter the City Name : ");
-                city_Check = Console.ReadLine();
-                obj.search_Person_In_City(city_Check);
-            }
-            else if (c_s == "s")
-            {
-                Console.WriteLine("Enter the State Name : ");
-                state_Check = Console.ReadLine();
-                obj.search_Person_In_State(state_Check);
-            }
+            
+
+            obj.count_By_City_Or_State();
 
             AddContacts.printall();
             Console.ReadKey();
