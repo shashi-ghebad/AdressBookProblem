@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.IO;
+using AddressBook;
 
-namespace ReadAndWriteInFile
+namespace ReadWriteInCSVFile
 {
     class AddContacts
     {
@@ -13,6 +14,7 @@ namespace ReadAndWriteInFile
         public static Dictionary<string, TakeContacts> dictionary = new Dictionary<string, TakeContacts>();
         public static Dictionary<string, List<string>> dict_City = new Dictionary<string, List<string>>();
         public static Dictionary<string, List<string>> dict_State = new Dictionary<string, List<string>>();
+
 
         public void Assign(string address_Book, string first_Name, string last_Name, string address, string city, string state, int zip, int phone_number, string email)
         {
@@ -102,6 +104,7 @@ namespace ReadAndWriteInFile
                 }
             }
         }
+
         public static void printAll_WriteText_InFile()
         {
 
@@ -308,5 +311,15 @@ namespace ReadAndWriteInFile
 
         }
 
+
+        public void CSV()
+        {
+            AddressBookCsv.Implement_CSV(list);
+        }
+
+        public void CSVRead()
+        {
+            AddressBookCsv.Implement_CSV_Read();
+        }
     }
 }
