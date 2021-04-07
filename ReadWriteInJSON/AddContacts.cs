@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.IO;
-using ReadWriteInCSVFile;
 
-namespace ReadWriteInCSVFile
+namespace ReadWriteInJSON
 {
     class AddContacts
     {
@@ -14,7 +13,6 @@ namespace ReadWriteInCSVFile
         public static Dictionary<string, TakeContacts> dictionary = new Dictionary<string, TakeContacts>();
         public static Dictionary<string, List<string>> dict_City = new Dictionary<string, List<string>>();
         public static Dictionary<string, List<string>> dict_State = new Dictionary<string, List<string>>();
-
 
         public void Assign(string address_Book, string first_Name, string last_Name, string address, string city, string state, int zip, int phone_number, string email)
         {
@@ -320,6 +318,11 @@ namespace ReadWriteInCSVFile
         public void CSVRead()
         {
             AddressBookCsv.Implement_CSV_Read();
+        }
+
+        public void CSVReadJSON()
+        {
+            AddressBookWriteJSON.ImplementCSVToJSONAndRead();
         }
     }
 }

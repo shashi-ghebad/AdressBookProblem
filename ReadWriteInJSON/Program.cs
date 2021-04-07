@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace ReadWriteInCSVFile
+namespace ReadWriteInJSON
 {
     class Program
     {
@@ -126,6 +126,16 @@ namespace ReadWriteInCSVFile
             {
                 obj.CSVRead();
             }
+
+            AddressBookWriteJSON.ImplementCSVToJSON();
+            Console.WriteLine("Do you want to read the JSON Content of CSV File to display on Console (Type 'y' or 'n' for yes or no respectively): ");
+            string y_n_json = Console.ReadLine();
+
+            if (y_n_csv == "y")
+            {
+                obj.CSVReadJSON();
+            }
+
 
             Console.ReadKey();
         }

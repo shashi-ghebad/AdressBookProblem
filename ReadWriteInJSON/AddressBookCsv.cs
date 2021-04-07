@@ -6,15 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CsvHelper;
-using ReadWriteInCSVFile;
 
-namespace AddressBook
+namespace ReadWriteInJSON
 {
     class AddressBookCsv
     {
         public static void Implement_CSV(List<TakeContacts> list)
         {
-            string exportFilePath = @"C:\Users\Sashi\Desktop\AdressBoook\AdressBookProblem\ReadWriteInCSVFile\AddressBook.csv";
+            string exportFilePath = @"C:\Users\Sashi\Desktop\AdressBoook\AdressBookProblem\ReadWriteInJSON\Utility\AddressBook.csv";
 
             using (var writer = new StreamWriter(exportFilePath))
             using (var csvExport = new CsvWriter(writer, CultureInfo.InvariantCulture))
@@ -25,7 +24,7 @@ namespace AddressBook
 
         public static void Implement_CSV_Read()
         {
-            string FilePath = @"C:\Users\Sashi\Desktop\AdressBoook\AdressBookProblem\ReadWriteInCSVFile\AddressBook.csv";
+            string FilePath = @"C: \Users\Sashi\Desktop\AdressBoook\AdressBookProblem\ReadWriteInJSON\Utility\AddressBook.csv";
 
             using (var reader = new StreamReader(FilePath))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
