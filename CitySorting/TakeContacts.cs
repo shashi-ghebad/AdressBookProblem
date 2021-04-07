@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AddressBook
+namespace CitySorting
 {
     public class TakeContacts
     {

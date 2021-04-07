@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UC10-PersonCountInCity", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSorting", "NameSorting\NameSorting.csproj", "{DDB95FBE-903E-41BF-AAFE-CD5C68EBE258}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitySorting", "CitySorting\CitySorting.csproj", "{AA809E3A-BB76-4BF0-A37D-D768952391BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DDB95FBE-903E-41BF-AAFE-CD5C68EBE258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDB95FBE-903E-41BF-AAFE-CD5C68EBE258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDB95FBE-903E-41BF-AAFE-CD5C68EBE258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA809E3A-BB76-4BF0-A37D-D768952391BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA809E3A-BB76-4BF0-A37D-D768952391BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA809E3A-BB76-4BF0-A37D-D768952391BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA809E3A-BB76-4BF0-A37D-D768952391BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
