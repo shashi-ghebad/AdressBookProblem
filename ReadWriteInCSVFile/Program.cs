@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace ReadAndWriteInFile
+namespace ReadWriteInCSVFile
 {
     class Program
     {
@@ -115,8 +115,17 @@ namespace ReadAndWriteInFile
 
             Console.WriteLine("\n\n ADDRESS BOOKS INFORMATION \n\n");
 
-            AddContacts.printAll_WriteText_InFile();
+            //AddContacts.printAll_WriteText_InFile();
             ReadText();
+
+            obj.CSV();
+            Console.WriteLine("Do you want to read the CSV File to display on Console (Type 'y' or 'n' for yes or no respectively): ");
+            string y_n_csv = Console.ReadLine();
+
+            if (y_n_csv == "y")
+            {
+                obj.CSVRead();
+            }
 
             Console.ReadKey();
         }
