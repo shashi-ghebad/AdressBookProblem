@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
-namespace UC10_PersonCountInCity
+namespace NameSorting
 {
     class Program
     {
-
         public static string first_Name;
         public static string last_Name;
         public static string address;
@@ -19,7 +17,8 @@ namespace UC10_PersonCountInCity
         public static string edit_Last_Name;
         public static string delete_First_Name;
         public static string delete_Last_Name;
-       
+        //public static string city_Check;
+        //public static string state_Check;
 
         static void Main(string[] args)
         {
@@ -59,6 +58,10 @@ namespace UC10_PersonCountInCity
                     obj.Assign(address_Book, first_Name, last_Name, address, city, state, zip, phone_number, email);
                 }
                 obj.Check_Duplicate(address_Book);
+
+                string Name = first_Name + last_Name;
+                obj.Sort_By_Name(Name);
+
                 obj.Show(address_Book);
 
                 Console.WriteLine("\n Do you want to edit any person Information then reply with 'y' or 'n': ");
@@ -89,8 +92,6 @@ namespace UC10_PersonCountInCity
 
             Console.WriteLine("\n------PRINT THE NUMBER OF PERSONS BY CITY OR STATE------\n");
 
-            
-
             obj.count_By_City_Or_State();
 
             AddContacts.printall();
@@ -98,4 +99,3 @@ namespace UC10_PersonCountInCity
         }
     }
 }
- 

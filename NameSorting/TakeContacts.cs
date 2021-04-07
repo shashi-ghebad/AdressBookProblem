@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
-namespace UC10_PersonCountInCity
+namespace AddressBook
 {
-    internal class TakeContacts
+    public class TakeContacts
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
