@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ReadWriteInCSVFile
+namespace ReadWriteInJSON
 {
     public class TakeContacts
     {
